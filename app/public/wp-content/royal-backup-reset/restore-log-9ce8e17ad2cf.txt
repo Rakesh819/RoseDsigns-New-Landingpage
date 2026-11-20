@@ -1,0 +1,247 @@
+===========================================
+Royal Backup & Reset - Restore Log
+Started: 2026-11-17 05:21:02 UTC
+Task ID: 9ce8e17ad2cf
+===========================================
+
+0000.339 (R) [notice] restore_backup_session() called for timestamp: 1794892752
+0000.339 (R) [notice] RINFO:{"type":"state","stage":"started","data":[]}
+0000.340 (R) [notice] Ensuring WP_Filesystem is setup for a restore
+0000.342 (R) [notice] WP_Filesystem is setup and ready for a restore
+0000.342 (R) [notice] get_entities_to_restore() - backup_set keys: timestamp, created, site_url, wp_version, plugin_version, components, status, total_size, notes, source, storage_locations, remote_upload_status, nonce
+0000.346 (R) [notice] get_entities_to_restore() - requested components: db, plugins, themes, uploads, others
+0000.349 (R) [notice] Added entity: db => 1 file(s): backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz
+0000.349 (R) [notice] Added entity: plugins => 1 file(s): backup_2026-11-17-0519_RoseDsigns_4aae13accb27-plugins.zip
+0000.350 (R) [notice] Added entity: themes => 1 file(s): backup_2026-11-17-0519_RoseDsigns_4aae13accb27-themes.zip
+0000.351 (R) [notice] Added entity: uploads => 1 file(s): backup_2026-11-17-0519_RoseDsigns_4aae13accb27-uploads.zip
+0000.351 (R) [notice] Added entity: others => 1 file(s): backup_2026-11-17-0519_RoseDsigns_4aae13accb27-others.zip
+0000.351 (R) [notice] get_entities_to_restore() returning 5 entities
+0000.352 (R) [notice] RINFO:{"type":"state","stage":"verifying","data":"db, plugins, themes, uploads, others"}
+0000.353 (R) [notice] Calling perform_restore() with entities: db, plugins, themes, uploads, others
+0000.353 (R) [notice] perform_restore() started. Entities: db, plugins, themes, uploads, others
+0000.353 (R) [notice] Restore task started. Entities to restore: db, plugins, themes, uploads, others. Restore options: []
+0000.353 (R) [notice] Entity: db
+0000.353 (R) [notice] RINFO:{"type":"state_change","stage":"db","data":[]}
+0000.354 (R) [notice] restore_backup( file=backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz, type=db, last_entity=yes )
+0000.355 (R) [notice] Calling restore_backup_entity for database
+0000.355 (R) [notice] restore_backup_entity( backup_file=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/royal-backup-reset/backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz, type=db )
+0000.359 (R) [notice] Unpacking database package: backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz (0.4 MB)
+0000.366 (R) [notice] Database successfully unpacked to: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz
+0000.366 (R) [notice] Calling restore_backup_db with working_dir=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/upgrade/backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz
+0000.367 (R) [notice] Config bundle saved: royalbr_restore_in_progress = 9ce8e17ad2cf
+0000.368 (R) [notice] Config bundle saved: siteurl = http://localhost:10010
+0000.369 (R) [notice] Config bundle saved: home = http://localhost:10010
+0000.369 (R) [notice] Config bundle saved: royalbr_backup_history = (complex: array)
+0000.370 (R) [notice] Config bundle saved: royalbr_backup_display_names = (complex: array)
+0000.376 (R) [notice] Config bundle saved: fs_accounts = (complex: array)
+0000.377 (R) [notice] Config bundle saved: fs_api_cache = (complex: array)
+0000.378 (R) [notice] Config bundle saved: royalbr_activation_time = 1794892325
+0000.387 (R) [notice] Saved configuration bundle: 8 options
+0000.389 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.389 (R) [notice] Using direct MySQL access; mysqli=1
+0000.533 (R) [notice] Entering maintenance mode
+0000.533 (R) [notice] Enabling Maintenance mode&#8230;
+0000.588 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"begun","table":""}}
+0000.588 (R) [notice] Backup created by: Royal Backup & Reset
+0000.588 (R) [notice] Backup of: http://localhost:10010
+0000.588 (R) [notice] Content URL: http://localhost:10010/wp-content
+0000.588 (R) [notice] Uploads URL: http://localhost:10010/wp-content/uploads
+0000.589 (R) [notice] Old table prefix: wp_
+0000.589 (R) [notice] ROYALBR plugin slug: royal-backup-reset/royal-backup-reset.php
+0000.589 (R) [notice] Site information: multisite = 0
+0000.589 (R) [notice] Site information: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.590 (R) [notice] Skipped SQL statement (type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.591 (R) [notice] New table prefix: royalbr_tmp_89715_
+0000.595 (R) [notice] Processing table (InnoDB): wp_options - will restore as: royalbr_tmp_89715_options
+0000.596 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_options"}}
+0000.596 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_options"}}
+0000.942 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.976 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_options) to final table name (wp_options)
+0001.022 (R) [notice] Restoring prior configuration (table: wp_options; keys: 8)
+0001.032 (R) [notice] Config bundle restored: royalbr_restore_in_progress = 9ce8e17ad2cf (result: success)
+0001.052 (R) [notice] Config bundle restored: siteurl = http://localhost:10010 (result: success)
+0001.069 (R) [notice] Config bundle restored: home = http://localhost:10010 (result: success)
+0001.077 (R) [notice] Config bundle restored: royalbr_backup_history = (complex: array) (result: success)
+0001.096 (R) [notice] Config bundle restored: royalbr_backup_display_names = (complex: array) (result: success)
+0001.113 (R) [notice] Config bundle restored: fs_accounts = (complex: array) (result: success)
+0001.131 (R) [notice] Config bundle restored: fs_api_cache = (complex: array) (result: success)
+0001.149 (R) [notice] Config bundle restored: royalbr_activation_time = 1794892325 (result: success)
+0001.163 (R) [notice] .htaccess configuration file detected during restoration. Checking for fixes.
+0001.166 (R) [notice] Processing table (InnoDB): wp_users - will restore as: royalbr_tmp_89715_users
+0001.166 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_users"}}
+0001.166 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_users"}}
+0001.285 (R) [notice] Atomic restore: dropping original table (wp_users)
+0001.319 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_users) to final table name (wp_users)
+0001.350 (R) [notice] Processing table (InnoDB): wp_usermeta - will restore as: royalbr_tmp_89715_usermeta
+0001.351 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_usermeta"}}
+0001.351 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_usermeta"}}
+0001.461 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0001.497 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_usermeta) to final table name (wp_usermeta)
+0001.537 (R) [notice] Stored current user data for re-authentication: ID=1, login=admin
+0001.537 (R) [notice] Processing table (InnoDB): wp_commentmeta - will restore as: royalbr_tmp_89715_commentmeta
+0001.538 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_commentmeta"}}
+0001.538 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_commentmeta"}}
+0001.629 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0001.665 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_commentmeta) to final table name (wp_commentmeta)
+0001.705 (R) [notice] Processing table (InnoDB): wp_comments - will restore as: royalbr_tmp_89715_comments
+0001.705 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_comments"}}
+0001.706 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_comments"}}
+0001.855 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0001.896 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_comments) to final table name (wp_comments)
+0001.939 (R) [notice] Processing table (InnoDB): wp_links - will restore as: royalbr_tmp_89715_links
+0001.939 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_links"}}
+0001.939 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_links"}}
+0002.043 (R) [notice] Atomic restore: dropping original table (wp_links)
+0002.078 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_links) to final table name (wp_links)
+0002.115 (R) [notice] Processing table (InnoDB): wp_postmeta - will restore as: royalbr_tmp_89715_postmeta
+0002.116 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_postmeta"}}
+0002.116 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_postmeta"}}
+0002.546 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0002.606 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_postmeta) to final table name (wp_postmeta)
+0002.756 (R) [notice] Processing table (InnoDB): wp_posts - will restore as: royalbr_tmp_89715_posts
+0002.756 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_posts"}}
+0002.756 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_posts"}}
+0003.019 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0003.061 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_posts) to final table name (wp_posts)
+0003.104 (R) [notice] Processing table (InnoDB): wp_term_relationships - will restore as: royalbr_tmp_89715_term_relationships
+0003.104 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_term_relationships"}}
+0003.104 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_term_relationships"}}
+0003.211 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0003.252 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_term_relationships) to final table name (wp_term_relationships)
+0003.286 (R) [notice] Processing table (InnoDB): wp_term_taxonomy - will restore as: royalbr_tmp_89715_term_taxonomy
+0003.287 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_term_taxonomy"}}
+0003.287 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_term_taxonomy"}}
+0003.382 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0003.421 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_term_taxonomy) to final table name (wp_term_taxonomy)
+0003.460 (R) [notice] Processing table (InnoDB): wp_termmeta - will restore as: royalbr_tmp_89715_termmeta
+0003.461 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_termmeta"}}
+0003.461 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_termmeta"}}
+0003.581 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0003.624 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_termmeta) to final table name (wp_termmeta)
+0003.656 (R) [notice] Processing table (InnoDB): wp_terms - will restore as: royalbr_tmp_89715_terms
+0003.657 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_terms"}}
+0003.657 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_terms"}}
+0003.768 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0003.800 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_terms) to final table name (wp_terms)
+0003.838 (R) [notice] Processing table (InnoDB): wp_e_events - will restore as: royalbr_tmp_89715_e_events
+0003.838 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_e_events"}}
+0003.838 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_e_events"}}
+0003.918 (R) [notice] Atomic restore: dropping original table (wp_e_events)
+0003.954 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_e_events) to final table name (wp_e_events)
+0003.994 (R) [notice] Processing table (InnoDB): wp_fsmpt_email_logs - will restore as: royalbr_tmp_89715_fsmpt_email_logs
+0003.994 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"wp_fsmpt_email_logs"}}
+0003.995 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"table","table":"royalbr_tmp_89715_fsmpt_email_logs"}}
+0004.069 (R) [notice] Database queries processed: 50 in 3.67 seconds
+0004.070 (R) [notice] Skipped SQL statement (type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0004.080 (R) [notice] Unlocking database and leaving maintenance mode
+0004.081 (R) [notice] Disabling Maintenance mode&#8230;
+0004.082 (R) [notice] Atomic restore: dropping original table (wp_fsmpt_email_logs)
+0004.121 (R) [notice] Atomic restore: renaming new table (royalbr_tmp_89715_fsmpt_email_logs) to final table name (wp_fsmpt_email_logs)
+0004.161 (R) [notice] Finished: lines processed: 54 in 3.76 seconds
+0004.180 (R) [notice] Database successfully restored
+0004.180 (R) [notice] RINFO:{"type":"state","stage":"db","data":{"stage":"finished","table":""}}
+0004.180 (R) [notice] Database restore completed successfully
+0004.180 (R) [notice] Entity: plugins
+0004.180 (R) [notice] RINFO:{"type":"state_change","stage":"plugins","data":[]}
+0004.180 (R) [notice] restore_backup( file=backup_2026-11-17-0519_RoseDsigns_4aae13accb27-plugins.zip, type=plugins, last_entity=yes )
+0004.183 (R) [notice] Restoring file entity: plugins
+0004.183 (R) [notice] Unpacking backup_2026-11-17-0519_RoseDsigns_4aae13accb27-plugins.zip (58.2 MB)
+0093.625 (R) [notice] Successfully unpacked to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1
+0093.626 (R) [notice] Moving from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1/plugins to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins
+0093.626 (R) [notice] Deleting existing plugins files from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins
+0093.626 (R) [notice] Removing existing files...
+0093.628 (R) [notice] Deleting: elementor
+0097.180 (R) [notice] Deleting: elementskit-lite
+0097.845 (R) [notice] Deleting: essential-addons-for-elementor-lite
+0098.482 (R) [notice] Deleting: fluent-smtp
+0099.319 (R) [notice] Deleting: index.php
+0099.320 (R) [notice] Skipping royal-backup-reset directory to prevent self-deletion
+0099.320 (R) [notice] Deleting: royal-elementor-addons
+0100.292 (R) [notice] Deleting: wpforms-lite
+0104.059 (R) [notice] Finished deleting existing plugins files
+0104.059 (R) [notice] move_backup_in( working=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1/plugins, dest=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/, preserve=3, type=plugins )
+0107.057 (R) [notice] Top-level entities being moved: elementor, elementskit-lite, essential-addons-for-elementor-lite, fluent-smtp, index.php, royal-backup-reset, royal-elementor-addons, wpforms-lite
+0107.057 (R) [notice] Moving: elementor -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.069 (R) [notice] Moving: elementskit-lite -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.072 (R) [notice] Moving: essential-addons-for-elementor-lite -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.077 (R) [notice] Moving: fluent-smtp -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.080 (R) [notice] Moving: index.php -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.082 (R) [notice] Skipping royal-backup-reset directory to prevent self-deletion
+0107.082 (R) [notice] Moving: royal-elementor-addons -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.087 (R) [notice] Moving: wpforms-lite -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/plugins/
+0107.099 (R) [notice] Successfully moved all files for plugins
+0107.103 (R) [notice] PHP Error (2): rmdir(C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1/plugins): Directory not empty in C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public\wp-admin\includes\class-wp-filesystem-direct.php on line 414
+0107.103 (R) [notice] Warning: Could not remove source directory: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1/plugins
+0107.112 (R) [notice] Cleaned up working directory: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/0bfe98e1
+0107.112 (R) [notice] Successfully restored file entity: plugins
+0107.112 (R) [notice] Entity: themes
+0107.113 (R) [notice] RINFO:{"type":"state_change","stage":"themes","data":[]}
+0107.113 (R) [notice] restore_backup( file=backup_2026-11-17-0519_RoseDsigns_4aae13accb27-themes.zip, type=themes, last_entity=yes )
+0107.115 (R) [notice] Restoring file entity: themes
+0107.115 (R) [notice] Unpacking backup_2026-11-17-0519_RoseDsigns_4aae13accb27-themes.zip (21.4 MB)
+0115.427 (R) [notice] Successfully unpacked to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/548e8093
+0115.429 (R) [notice] Moving from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/548e8093/themes to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes
+0115.429 (R) [notice] Deleting existing themes files from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes
+0115.429 (R) [notice] Removing existing files...
+0115.433 (R) [notice] Deleting: astra
+0116.591 (R) [notice] Deleting: index.php
+0116.592 (R) [notice] Deleting: royal-elementor-kit
+0116.627 (R) [notice] Deleting: twentytwentyfive
+0116.790 (R) [notice] Deleting: twentytwentyfour
+0116.871 (R) [notice] Deleting: twentytwentythree
+0116.917 (R) [notice] Finished deleting existing themes files
+0116.917 (R) [notice] move_backup_in( working=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/548e8093/themes, dest=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/, preserve=3, type=themes )
+0117.345 (R) [notice] Top-level entities being moved: astra, index.php, royal-elementor-kit, twentytwentyfive, twentytwentyfour, twentytwentythree
+0117.345 (R) [notice] Moving: astra -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.351 (R) [notice] Moving: index.php -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.353 (R) [notice] Moving: royal-elementor-kit -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.355 (R) [notice] Moving: twentytwentyfive -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.359 (R) [notice] Moving: twentytwentyfour -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.361 (R) [notice] Moving: twentytwentythree -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/themes/
+0117.364 (R) [notice] Successfully moved all files for themes
+0117.367 (R) [notice] Cleaned up working directory: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/548e8093
+0117.367 (R) [notice] Successfully restored file entity: themes
+0117.367 (R) [notice] Entity: uploads
+0117.368 (R) [notice] RINFO:{"type":"state_change","stage":"uploads","data":[]}
+0117.368 (R) [notice] restore_backup( file=backup_2026-11-17-0519_RoseDsigns_4aae13accb27-uploads.zip, type=uploads, last_entity=yes )
+0117.371 (R) [notice] Restoring file entity: uploads
+0117.371 (R) [notice] Unpacking backup_2026-11-17-0519_RoseDsigns_4aae13accb27-uploads.zip (17.7 MB)
+0118.049 (R) [notice] Successfully unpacked to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/fc30ed15
+0118.049 (R) [notice] Moving from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/fc30ed15/uploads to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads
+0118.049 (R) [notice] Deleting existing uploads files from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads
+0118.049 (R) [notice] Removing existing files...
+0118.050 (R) [notice] Deleting: 2025
+0118.154 (R) [notice] Deleting: 2026
+0118.163 (R) [notice] Deleting: elementor
+0118.173 (R) [notice] Finished deleting existing uploads files
+0118.173 (R) [notice] move_backup_in( working=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/fc30ed15/uploads, dest=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads/, preserve=3, type=uploads )
+0118.211 (R) [notice] Moving: 2025 -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads/
+0118.213 (R) [notice] Moving: 2026 -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads/
+0118.216 (R) [notice] Moving: elementor -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/uploads/
+0118.219 (R) [notice] Successfully moved all files for uploads
+0118.221 (R) [notice] Cleaned up working directory: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/fc30ed15
+0118.221 (R) [notice] Successfully restored file entity: uploads
+0118.221 (R) [notice] Entity: others
+0118.222 (R) [notice] RINFO:{"type":"state_change","stage":"others","data":[]}
+0118.222 (R) [notice] restore_backup( file=backup_2026-11-17-0519_RoseDsigns_4aae13accb27-others.zip, type=others, last_entity=yes )
+0118.224 (R) [notice] Restoring file entity: others (special case)
+0118.224 (R) [notice] Unpacking backup_2026-11-17-0519_RoseDsigns_4aae13accb27-others.zip (0 MB)
+0118.229 (R) [notice] Successfully unpacked to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/6a877da4
+0118.229 (R) [notice] Moving from C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/6a877da4 to C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content
+0118.229 (R) [notice] move_backup_in( working=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/6a877da4, dest=C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/, preserve=3, type=others )
+0118.230 (R) [notice] Moving: index.php -> C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/
+0118.233 (R) [notice] Successfully moved all files for others
+0118.235 (R) [notice] Cleaned up working directory: C:/Users/Rakesh Kumar/Local Sites/rosedsigns/app/public/wp-content/upgrade/6a877da4
+0118.235 (R) [notice] Successfully restored file entity: others
+0118.275 (R) [notice] perform_restore() completed successfully
+0118.275 (R) [notice] post_restore_clean_up() started
+0118.275 (R) [notice] Restore was successful, performing cleanup
+0118.299 (R) [notice] Re-authenticated user after restore: ID=1, login=admin
+0118.300 (R) [notice] Elementor's clear cache method exists and will be executed
+0118.464 (R) [notice] post_restore_clean_up() completed
+0118.470 (R) [notice] RINFO:{"type":"state","stage":"finished","data":{"actions":{"Return to Royal Backup & Reset":"http:\/\/localhost:10010\/wp-admin\/admin.php?page=royal-backup-reset&restore_success=1"},"urls":{"home":"http:\/\/localhost:10010","about":"http:\/\/localhost:10010\/about\/","blog-ai-image-v1":"http:\/\/localhost:10010\/blog-ai-image-v1\/"}}}
+
+===========================================
+Finished: 2026-11-17 05:23:01 UTC
+Status: SUCCESS
+===========================================

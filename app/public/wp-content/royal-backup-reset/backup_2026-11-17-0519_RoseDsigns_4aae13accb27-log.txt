@@ -1,0 +1,152 @@
+0000.000 (0) Royal Backup & Reset: Backup started
+0000.000 (0) WordPress version: 7.1.4
+0000.000 (0) Site: RoseDsigns (http://localhost:10010)
+0000.000 (0) Backup directory: C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/royal-backup-reset
+0000.011 (0) Backup run: resumption=0, nonce=4aae13accb27, file_nonce=4aae13accb27 begun at=1794892752 (2s ago)
+0000.011 (0) Scheduling resumption (1) after 120 seconds in case this run gets aborted
+0001.034 (0) Backup config: db=true, files=true, wpcore=false
+0001.051 (0) Starting database export
+0001.221 (0) Table wp_options: 231 rows in 0.13 seconds
+0001.255 (0) Table wp_options: finishing file(s) (2)
+0001.279 (0) Table wp_users: 1 rows in 0.01 seconds
+0001.304 (0) Table wp_users: finishing file(s) (2)
+0001.332 (0) Table wp_usermeta: 22 rows in 0.01 seconds
+0001.357 (0) Table wp_usermeta: finishing file(s) (2)
+0001.393 (0) Table wp_commentmeta: 0 rows in 0.01 seconds
+0001.434 (0) Table wp_commentmeta: finishing file(s) (2)
+0001.464 (0) Table wp_comments: 6 rows in 0.01 seconds
+0001.491 (0) Table wp_comments: finishing file(s) (2)
+0001.521 (0) Table wp_links: 0 rows in 0.01 seconds
+0001.545 (0) Table wp_links: finishing file(s) (2)
+0001.694 (0) Table wp_postmeta: 583 rows in 0.13 seconds
+0001.723 (0) Table wp_postmeta: finishing file(s) (2)
+0001.804 (0) Table wp_posts: 110 rows in 0.05 seconds
+0001.850 (0) Table wp_posts: finishing file(s) (2)
+0001.897 (0) Table wp_term_relationships: 71 rows in 0.01 seconds
+0001.937 (0) Table wp_term_relationships: finishing file(s) (2)
+0001.964 (0) Table wp_term_taxonomy: 24 rows in 0.01 seconds
+0001.995 (0) Table wp_term_taxonomy: finishing file(s) (2)
+0002.020 (0) Table wp_termmeta: 22 rows in 0.01 seconds
+0002.044 (0) Table wp_termmeta: finishing file(s) (2)
+0002.067 (0) Table wp_terms: 24 rows in 0.01 seconds
+0002.096 (0) Table wp_terms: finishing file(s) (2)
+0002.119 (0) Table wp_e_events: 0 rows in 0.01 seconds
+0002.144 (0) Table wp_e_events: finishing file(s) (2)
+0002.170 (0) Table wp_fsmpt_email_logs: 0 rows in 0.01 seconds
+0002.193 (0) Table wp_fsmpt_email_logs: finishing file(s) (2)
+0002.211 (0) backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz: finished writing out complete database file (415.6 KB)
+0002.249 (0) Database backup completed: backup_2026-11-17-0519_RoseDsigns_4aae13accb27-db.gz
+0002.271 (0) Starting file archiving
+0002.293 (0) Starting archive creation for plugins (split size: 370MB)
+0002.294 (0) initialize_archive_file for plugins - source elements: Array
+(
+    [0] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/plugins
+)
+
+0002.294 (0) Adding plugins element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/plugins, stored_as=plugins
+0008.885 (0) Skip directory (our plugin): plugins/royal-backup-reset/assets
+0008.886 (0) Skip directory (our plugin): plugins/royal-backup-reset/includes
+0008.890 (0) Skip directory (our plugin): plugins/royal-backup-reset/vendor
+0015.095 (0) File counting for plugins: 11570 files, 2154 dirs in 12 seconds
+0015.095 (0) Starting zip batch: 11570 files, 2154 dirs queued (memory: 10 MB)
+0015.099 (0) Zip opened, directories added, beginning file addition
+0015.100 (0) Batch commit to archive: 1 files, 0 MB
+0015.110 (0) Calling zip close (files: 1, data: 1 KB, memory: 10 MB)
+0016.054 (0) Batch commit to archive: 501 files, 20.7 MB
+0016.066 (0) Calling zip close (files: 501, data: 21 MB, memory: 10 MB)
+0021.025 (0) Batch commit to archive: 341 files, 22.4 MB
+0021.036 (0) Calling zip close (files: 341, data: 22 MB, memory: 10 MB)
+0026.314 (0) Batch commit to archive: 334 files, 22.1 MB
+0026.323 (0) Calling zip close (files: 334, data: 22 MB, memory: 10 MB)
+0033.466 (0) Batch commit to archive: 501 files, 4 MB
+0033.483 (0) Calling zip close (files: 501, data: 4 MB, memory: 10 MB)
+0034.878 (0) Batch commit to archive: 501 files, 1.3 MB
+0034.890 (0) Calling zip close (files: 501, data: 1 MB, memory: 10 MB)
+0036.216 (0) Batch commit to archive: 501 files, 1.9 MB
+0036.230 (0) Calling zip close (files: 501, data: 2 MB, memory: 10 MB)
+0037.279 (0) Batch commit to archive: 501 files, 6.6 MB
+0037.291 (0) Calling zip close (files: 501, data: 7 MB, memory: 10 MB)
+0039.110 (0) Batch commit to archive: 501 files, 1.9 MB
+0039.126 (0) Calling zip close (files: 501, data: 2 MB, memory: 10 MB)
+0040.487 (0) Batch commit to archive: 501 files, 15.1 MB
+0040.496 (0) Calling zip close (files: 501, data: 15 MB, memory: 10 MB)
+0043.974 (0) Batch commit to archive: 501 files, 9.5 MB
+0043.989 (0) Calling zip close (files: 501, data: 9 MB, memory: 10 MB)
+0046.210 (0) Batch commit to archive: 501 files, 14.5 MB
+0046.221 (0) Calling zip close (files: 501, data: 14 MB, memory: 10 MB)
+0050.139 (0) Batch commit to archive: 501 files, 5 MB
+0050.154 (0) Calling zip close (files: 501, data: 5 MB, memory: 10 MB)
+0052.760 (0) Batch commit to archive: 501 files, 8.1 MB
+0052.773 (0) Calling zip close (files: 501, data: 8 MB, memory: 10 MB)
+0056.124 (0) Batch commit to archive: 501 files, 10.7 MB
+0056.145 (0) Calling zip close (files: 501, data: 11 MB, memory: 10 MB)
+0059.918 (0) Batch commit to archive: 501 files, 7.7 MB
+0059.932 (0) Calling zip close (files: 501, data: 8 MB, memory: 10 MB)
+0062.194 (0) Batch commit to archive: 501 files, 7.1 MB
+0062.205 (0) Calling zip close (files: 501, data: 7 MB, memory: 10 MB)
+0065.016 (0) Batch commit to archive: 501 files, 3.5 MB
+0065.038 (0) Calling zip close (files: 501, data: 3 MB, memory: 10 MB)
+0067.177 (0) Batch commit to archive: 501 files, 4.1 MB
+0067.194 (0) Calling zip close (files: 501, data: 4 MB, memory: 10 MB)
+0072.175 (0) Batch commit to archive: 501 files, 2 MB
+0072.195 (0) Calling zip close (files: 501, data: 2 MB, memory: 10 MB)
+0074.116 (0) Batch commit to archive: 501 files, 1 MB
+0074.168 (0) Calling zip close (files: 501, data: 1 MB, memory: 10 MB)
+0076.632 (0) Batch commit to archive: 501 files, 1.3 MB
+0076.650 (0) Calling zip close (files: 501, data: 1 MB, memory: 10 MB)
+0078.661 (0) Batch commit to archive: 501 files, 2 MB
+0078.673 (0) Calling zip close (files: 501, data: 2 MB, memory: 10 MB)
+0081.710 (0) Batch commit to archive: 501 files, 2.1 MB
+0081.724 (0) Calling zip close (files: 501, data: 2 MB, memory: 10 MB)
+0086.592 (0) Created plugins zip (0) - 59638.9 KB in 84.3 s (707.5 KB/s)
+0086.617 (0) Starting archive creation for themes (split size: 370MB)
+0086.619 (0) initialize_archive_file for themes - source elements: Array
+(
+    [0] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/themes
+)
+
+0086.619 (0) Adding themes element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/themes, stored_as=themes
+0087.585 (0) File counting for themes: 1175 files, 394 dirs in 1 seconds
+0087.585 (0) Starting zip batch: 1175 files, 394 dirs queued (memory: 10 MB)
+0087.587 (0) Zip opened, directories added, beginning file addition
+0087.963 (0) Batch commit to archive: 501 files, 15.8 MB
+0087.976 (0) Calling zip close (files: 501, data: 16 MB, memory: 10 MB)
+0090.553 (0) Batch commit to archive: 501 files, 16.3 MB
+0090.562 (0) Calling zip close (files: 501, data: 16 MB, memory: 10 MB)
+0092.544 (0) Created themes zip (0) - 21904.2 KB in 5.9 s (3696.3 KB/s)
+0092.569 (0) Starting archive creation for uploads (split size: 370MB)
+0092.571 (0) initialize_archive_file for uploads - source elements: Array
+(
+    [0] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/2025
+    [1] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/2026
+    [2] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/elementor
+)
+
+0092.571 (0) Adding uploads element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/2025, stored_as=uploads/2025
+0092.673 (0) Adding uploads element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/2026, stored_as=uploads/2026
+0092.680 (0) Adding uploads element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/uploads/elementor, stored_as=uploads/elementor
+0092.700 (0) File counting for uploads: 280 files, 8 dirs in 0 seconds
+0092.701 (0) Starting zip batch: 280 files, 8 dirs queued (memory: 10 MB)
+0092.701 (0) Zip opened, directories added, beginning file addition
+0093.097 (0) Created uploads zip (0) - 18144.7 KB in 0.5 s (34448.7 KB/s)
+0093.121 (0) Starting backup of additional content directories (index: 0)
+0093.122 (0) Starting archive creation for others (split size: 370MB)
+0093.123 (0) initialize_archive_file for others - source elements: Array
+(
+    [0] => C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/index.php
+)
+
+0093.124 (0) Adding others element: fullpath=C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/index.php, stored_as=index.php
+0093.125 (0) File counting for others: 1 files, 0 dirs in 0 seconds
+0093.125 (0) Starting zip batch: 1 files, 0 dirs queued (memory: 10 MB)
+0093.125 (0) Zip opened, directories added, beginning file addition
+0093.133 (0) Created others zip (0) - 0.1 KB in 0 s (15.4 KB/s)
+0093.174 (0) File backup completed - 8 entities
+0093.204 (0) Backup complete - nonce: 4aae13accb27
+0093.242 (0) Saved backup to history
+0093.250 (0) Backup finished - cleared scheduled resumptions
+0000.000 (0) Royal Backup & Reset: Backup started
+0000.000 (0) WordPress version: 7.1.4
+0000.000 (0) Site: RoseDsigns (http://localhost:10010)
+0000.000 (0) Backup directory: C:\Users\Rakesh Kumar\Local Sites\rosedsigns\app\public/wp-content/royal-backup-reset
+0000.019 (0) This backup task (4aae13accb27) is over 2 days old - ending
